@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>Tip Calculator</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         
         <div class="input-box">
             <img src="./images/icon-dollar.svg" alt="icon dollar">
-            <input type="number" id="bill" placeholder="0">
+            <input oninput="receiveBillValue()" type="number" id="bill" placeholder="0">
         </div>
         </div>
 
@@ -40,7 +41,7 @@
             
             <div class="input-box">
                 <img src="./images/icon-person.svg" alt="icon person">
-                <input type="number" id="people" placeholder="0">
+                <input oninput="receiveNumberOfpeopleValue" type="number" id="people" placeholder="0">
             </div>
             </div>
      </section>
