@@ -1,10 +1,10 @@
 let bill = 0
 let tipPercentage = 0
-let numberOfpeople = 0
+let numberOfPeople = 0
 let buttonSelected = null
 
 function receiveBillValue(){
-    Bill = document.querySelector("#bill").ValueAsNumber
+    bill = document.querySelector("#bill").ValueAsNumber
     calculate()
 }
 
@@ -42,11 +42,11 @@ function calculate (){
     if (bill !== 0 && tipPercentage !== 0 && numberOfPeople !== 0){
        let amountStrong = document.querySelector(".amount strong")
        let tipAmountPerson = (bill * tipPercentage) / numberOfPeople
-       amountStrong.innerText = '$${tipAmountPerson.toFixed(2)}'
+       amountStrong.innerText = `$${tipAmountPerson.toFixed(2)}`
      
         let totalStrong = document.querySelector(".total strong")
-        let totalPerson = bill / numberOfpeople + tipAmountPerson
-        totalStrong.innerText = '$${totalPerson.toFixed(2)}'
+        let totalPerson = bill / numberOfPeople + tipAmountPerson
+        totalStrong.innerText = `$${totalPerson.toFixed(2)}`
     } else {
         console.log("preencha tudo")
     }
